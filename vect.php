@@ -874,7 +874,7 @@ PRE.sol {
 echo '<a href="' . $_SERVER['PHP_SELF'];
 if (!isset($_GET['dbg'])) echo '?dbg';
 echo '">Debug ' . ((isset($_GET['dbg']))?'off':'on') . '</a>';
-?>
+?> / <a href="https://github.com/mbirth/php-vectcalc">GitHub</a>
 <table border="0" class="vars" cellpadding="0" cellspacing="1">
 	<tr>
 		<th colspan="2">Variables</th>

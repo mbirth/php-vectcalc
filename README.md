@@ -5,6 +5,12 @@ This is a PHP script that creates sort of a calculation environment for working 
 vectors. Not only will it calculate various operations with vectors, it will also plot
 them, calculate angles between different vectors, intersection points, etc.
 
+Online Demo
+-----------
+
+https://vect.birth-online.de
+
+
 Syntax
 ------
 
