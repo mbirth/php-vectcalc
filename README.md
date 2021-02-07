@@ -35,3 +35,28 @@ Removes all plots from screen.
 Deletes variable `P2`.
 
 More commands are available from the onscreen help box.
+
+
+Example
+-------
+
+Copy this into the input box.
+
+    set P1=[1,-1,0]
+    set P2=P1+[1,0,0]
+    set P3=P1+[1,-1,0]
+    set P4=P1-[0,1,0]
+    set P5=P1+[0,0,1]
+    set P6=P2+[0,0,1]
+    set P7=P3+[0,0,1]
+    set P8=P4+[0,0,1]
+    plotdel all
+    plotL P1;P2
+    plotL P1;P4
+    plotL P2;P3
+    plotL P3;P4
+    plotL P1;P5
+    plotL P2;P6
+    plotL P3;P7
+    plotL P5;P6
+    plotL P6;P7

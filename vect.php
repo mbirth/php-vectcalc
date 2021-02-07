@@ -908,6 +908,10 @@ echo '">Debug ' . ((isset($_GET['dbg']))?'off':'on') . '</a>';
 		<td>sets variable <i>idx</i> to the result of <i>equation</i></td>
 	</tr>
 	<tr>
+		<td><tt>set <i>idx</i>=[1,2,3]</tt></td>
+		<td>sets variable <i>idx</i> to vector (1, 2, 3)</td>
+	</tr>
+	<tr>
 		<td><tt>unset <i>idx</i></tt></td>
 		<td>deletes variable <i>idx</i></td>
 	</tr>
