@@ -688,10 +688,10 @@ foreach ($cmds as $c) {
       $c = solve('(' . $a . ')x(' . $b . ')');
       $out[] = '(Cross of ' . $a . ' and ' . $b . ' is ' . $c . ')';
       $cosv = solve('|' . $c . '|/(|' . $a . '|*|' . $b . '|)');
-      $out[] = '(cos ß = ' . $cosv . ')';
+      $out[] = '(cos ÃŸ = ' . $cosv . ')';
       $ans = rad2deg(acos($cosv));
       $_SESSION['arystore']['Ans'] = $ans;
-      $out[] = '> <span class="result">' . $ans . '°</span>';
+      $out[] = '> <span class="result">' . $ans . 'Â°</span>';
       break;
 
     case 'anglege':    // anglege GP;GV;EP;EV1;EV2
@@ -701,10 +701,10 @@ foreach ($cmds as $c) {
       $tmp = solve($n . '*(' . $gv . ')');
       $out[] = '(' . $n . '*' . $gv . ' is ' . $tmp . ')';
       $sinv = solve($tmp . '/(|' . $gv . '|*|' . $n . '|)');
-      $out[] = '(sin ß = ' . $sinv . ')';
+      $out[] = '(sin ÃŸ = ' . $sinv . ')';
       $ans = rad2deg(asin($sinv));
       $_SESSION['arystore']['Ans'] = $ans;
-      $out[] = '> <span class="result">' . $ans . '°</span> (' . (90-$ans) . '°)';
+      $out[] = '> <span class="result">' . $ans . 'Â°</span> (' . (90-$ans) . 'Â°)';
       break;
 
     case 'angleee':    // anglege EP;EV1;EV2;EP;EV1;EV2
@@ -716,10 +716,10 @@ foreach ($cmds as $c) {
       $tmp = solve($n1 . '*' . $n2);
       $out[] = '(' . $n1 . '*' . $n2 . ' is ' . $tmp . ')';
       $cosv = solve($tmp . '/(|' . $n1 . '|*|' . $n2 . '|)');
-      $out[] = '(cos ß = ' . $cosv . ')';
+      $out[] = '(cos ÃŸ = ' . $cosv . ')';
       $ans = rad2deg(acos($cosv));
       $_SESSION['arystore']['Ans'] = $ans;
-      $out[] = '> <span class="result">' . $ans . '°</span> (' . (90-$ans) . '°)';
+      $out[] = '> <span class="result">' . $ans . 'Â°</span> (' . (90-$ans) . 'Â°)';
       break;
 
     case 'inter':     // inter G1P;G1V;G2P;G2V
